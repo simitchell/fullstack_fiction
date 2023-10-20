@@ -4,4 +4,4 @@ from .models import BookModel
 class BookModelSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = BookModel
-        fields = ['title', 'author']
+        fields = '__all__'

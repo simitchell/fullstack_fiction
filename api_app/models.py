@@ -4,6 +4,7 @@ from django.db import models
 class BookModel(models.Model):
     title = models.CharField(null=True)
     author = models.CharField(null=True)
+    year = models.CharField(null=True)
     description = models.TextField(null=True)
 
     def __str__(self):
